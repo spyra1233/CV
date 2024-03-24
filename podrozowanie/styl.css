@@ -1,0 +1,518 @@
+   /* DEFINICJE CZCIONEK    */
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-M.ttf');
+}   
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-MI.ttf');
+    font-style: italic;
+}   
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-B.ttf');
+    font-weight: bold;    
+}   
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-BI.ttf');
+    font-weight: bold;
+    font-style: italic;    
+}   
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-L.ttf');
+    font-weight: 300;
+}   
+@font-face{
+    font-family: Ubuntu;
+    src: url('CZCIONKI/ubuntu-font-family-0.83/ubuntu-font-family-0.83/Ubuntu-LI.ttf');
+    font-weight: 300;
+    font-style: italic;    
+}   
+
+
+body {
+     background: #ccc url('grafika/background.png');
+     margin: 0;
+     font-family: Ubuntu;
+     }
+
+/* klasy pomocnicze */
+.obrazek-skalowany{
+width: 100%;
+}
+
+/* formatowanie dokumentu */
+
+
+.zielony-pasek {
+    height: 8px;
+    background: #439f55;
+    margin-bottom: 30px;
+   }
+.napraw-float {
+    clear: both;
+}
+
+#kontener {
+    background: #f8f8f8;
+    /*max-width: 1018px*/
+    width: 1018px;
+    margin: 0 auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    }
+
+#naglowek .kolumna1 {
+    width: 45%;
+    float: left;
+}
+
+#naglowek .kolumna2 {
+    width: 45%;
+    float: right;
+}
+
+#naglowek h1 {
+    color: #439f55;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+#naglowek .kolumna1 div {
+    color: #999;
+    font-weight: 300;
+    margin-bottom: 45px;
+    margin-left: 30px;
+}
+
+/* formatowanie menu z mediami spol */
+ul.media-spol {
+    list-style: none;
+}
+
+ul.media-spol li {
+display: inline-block;
+}
+ul.media-spol a {
+    text-decoration: none;
+    color: #999;
+    margin: 1px;
+}
+
+ul.media-spol a:hover {
+color: rgba(59, 89, 152);
+}
+
+.fa-twitter:hover {
+    color:cornflowerblue;
+}
+.fa-google-plus:hover {
+    color: darkred;
+}
+.fa-pinterest-square:hover{
+    color:brown ;
+}
+.fa-youtube-play:hover{
+    color: crimson;
+}
+.fa-vimeo:hover{
+    color: aqua;
+}
+.fa-linkedin:hover{
+    color: blue;
+}
+.fa-flickr:hover{
+    color: pink;
+}
+.fa-instagram:hover{
+    color: #517fa4;
+}
+.fa-rss:hover{
+    color: #fc7216;
+}
+.fa-github:hover{
+    color: #151013;
+}
+
+
+/* formatowanie meny */
+#tło {
+    background: #439f55;
+}
+
+ul.menu {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+ul.menu li{
+display: inline-block;
+}
+
+ul.menu a{
+display: block;
+color: white; 
+font-weight: 300;  
+text-decoration: none; 
+padding: 15px 10px;
+font-size: 1.2em;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+ul.menu a:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* formatowanie karuzeli obrazów */
+#karuzela {
+    height: 350px;
+    background: url('grafika/karuzela.jpg') 0 center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+.karuzela-tekst{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    float: right;
+    position: relative;
+    right: 20px;
+    top: 50%;
+}
+
+.karuzela-tekst h2, .karuzela-tekst p {
+    margin:0;
+}
+
+/* Formatowanie bloku z kolumanmi */
+#tresc {
+ margin-top: 20px;
+}
+
+#tresc>.kolumna1 {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 64%;
+    float: left;
+}
+#tresc>.kolumna2 {
+    margin-right: 3%;
+    width: 27%;
+    float: left;
+}
+
+/* formatowanie artykułu */
+article{
+    background: #fff;
+    border: 1px solid #dedede; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+article h2, article p {
+    font-weight: 300;
+}
+
+article .tekst{
+    padding: 3%;
+}
+
+article h2 {
+    font-size: 1.8em;
+}
+
+article p {
+    line-height: 150%;
+}
+article footer{
+    background: #f9f9f9;
+    padding: 0px 8px;
+    border-top: 1px solid #dedede;
+}
+
+article footer>.kolumna1{
+    width: 75%;
+    float: left;
+    font-weight: 300;
+    font-size: 0.8em;
+    padding: 15px 0;    
+}
+article footer>.kolumna2{
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding: 8px 0;
+}
+article footer i{
+    margin-left: 15px;
+}
+
+article footer>.kolumna2 a {
+    display: inline-block;
+    color: #fff;
+    background: #439f55;
+    padding: 5px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.2);
+    border: 1px solid #57ad68;
+}
+
+.separator {
+    border-top: 2px dashed #dedede;
+    margin: 15px 0;
+}
+
+.wyrozniony {
+    border-bottom: 4px solid #439f55;
+   }
+
+.lista-stron{
+  padding:10px;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+ul.cyferki li{
+    display: inline-block;
+    color: #999; 
+}
+
+ul.cyferki a{
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1em;
+    color: #151013;
+}
+
+ul.cyferki a:hover{
+    background: #57ad68;
+    color:#fff;
+}
+
+.szukaj{
+    text-align: center;
+    border:1px solid #dedede;
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.szukaj input{
+    margin:20px 0;
+    width: 75%;
+    padding: 10px 12px;
+    background: #f9f9f9; 
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    color: #888;
+    font-style: italic;
+}
+
+.popularne{
+    background: #fff;
+    border: 1px solid #dedede;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    }
+.popularne h3{
+ margin-left: 7%;
+}
+
+ul.obrazki{
+display: inline-block;
+}
+ul.obrazki li{
+    color: #999;
+    list-style: none;
+    border-bottom: 1px solid #dedede;
+}
+
+ul.obrazki a{
+    color: #439f55;
+    font-size: 14px;
+}
+ul.obrazki div{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 150%;
+}
+ul.obrazki img{
+    display: inline-block;
+    width: 25%;
+    background: #fff;
+    padding: 3px;
+    border: 1px solid #dedede;
+}
+.data{
+     font-weight: 300;
+     font-size: 10px;
+}
+
+ul.li-bez-odstepow li{
+    border: none;
+    margin-bottom: 0px;
+    color: #151013;
+    font-size: 10px;
+}
+ul.li-bez-odstepow a{
+   font-size:14px;
+   text-decoration: none;
+}
+/* formatowanie kalendarza */
+table.kalendarz{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.kalendarz td, table.kalendarz th{
+border: 1px solid #666;
+width: 14.28%;
+padding: 5px 0;
+text-align: center;
+}
+table.kalendarz thead, table.kalendarz tfoot {
+    background: #dedede;
+}
+table.kalendarz tbody{
+    background: #f8f8f8;
+}
+
+table.kalendarz a{
+    color: #439f55;
+    text-decoration: none;
+}
+table.kalendarz a:hover {
+    text-decoration: underline;
+}
+table.kalendarz tbody td:hover{
+    background:#439f55;
+    cursor:pointer;
+}
+/* formatowanie bloki dol */
+#bloki-dol{
+    margin-top: 30px;
+    border-top: 1px solid #dedede;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+#bloki-dol>.kolumna1{
+     width: 29%;
+     float:left;
+     margin-left: 3%;
+}
+#bloki-dol>.kolumna2 .popularne{
+     width: 29%;
+     float:left;
+     margin-left: 3%;
+     margin-right: 3%;
+     margin-bottom: 30px
+}
+#bloki-dol>.kolumna3{
+     width: 29%;
+     float:left;
+     margin-right: 3%;
+     
+}
+    /* formatowanie tagów */
+.tagi p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.tagi span {
+    font-weight: normal;
+    font-size: 130%;
+}
+
+/* formatowanie stopki */
+#kontener>footer{
+    border-top: 2px dashed #dedede;
+    padding: 10px;
+    font-weight: 300px;
+    font-size: 80%;
+}
+#kontener>footer>.kolumna1{
+width: 80%;
+float: left;
+color: #888;
+}
+#kontener>footer>.kolumna2{
+width: 20%;
+float:left;
+text-align: right;
+}
+
+/*-----------------------------------------------------*/
+/*-------------ZAPYTANIA O MEDIA-----------------------*/
+/*-----------------------------------------------------*/
+
+@media(max-width:767px){
+    #naglowek .kolumna1, #naglowek .kolumna2{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+ul.menu{
+    padding-left:0;
+}
+
+
+   ul.menu li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #57ad68;
+    }
+    .karuzela-tekst{
+        width:100%;
+        border-radius: none;
+        float:none;
+        right: 0;
+        top: 0;
+    }
+    #tresc>.kolumna1{
+        width: 94%;
+        float: none;
+    }
+    #tresc>.kolumna2{
+        margin-left:3%;
+        width: 94%;
+        float: none;
+    }
+    #bloki-dol>.kolumna1, #bloki-dol>.kolumna2, #bloki-dol>.kolumna3{
+        margin-left:3%;
+        margin-right: 3%;
+        width: 94%;
+        float: none;
+    }
+    #bloki-dol>.kolumna2{
+        display:none;
+    }
+    #kontener>footer>.kolumna1{
+        width:100%;
+        text-align: center;
+        float: none;
+    }
+
+}

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://yoursite.com/themify-icons.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* box-sizing: border-box; */
+            height: 150vh
+        }
+        .wrap{
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: -300px;
+            height: 200px;
+            opacity: 0.6;
+            transition: .2s ;
+            background-image: linear-gradient(rgb(255, 255, 0) 10%, rgb(255, 0, 0) 100%);
+            /* flex box */
+            display: flex;
+            flex-wrap: nowrap;
+        
+        }
+        .arrow{
+            position: fixed;
+            border: 3px solid black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            right: 2%;
+            bottom: 2%;
+            line-height: 50px;
+            text-align: center;
+            font-size: 50px;
+            transition: .2s ;
+            cursor: pointer;
+        }
+        article{
+            padding: 10px 20px;
+        }
+        span{
+            flex-basis: 100%;
+            text-align: center;
+            padding: 100px;
+        }
+        .rotate{
+            transform: rotate(135deg);
+            transition: .2s;
+            bottom: 210px;
+        }
+        .up{
+            bottom: 0;
+        }
+        
+    </style>
+ </head>
+ <body>
+
+    <div class="wrap">
+        <span>SHOP</span>
+        <span>CONTACT</span>
+        <span>HELP</span>
+        <span>PROFILE</span>
+    </div>
+    <article>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ullam odio quis reiciendis ex? Beatae, consequuntur? Dolorem, fugit est ducimus quae, saepe tempora dicta labore neque soluta nisi voluptate perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci sed accusamus eius repudiandae delectus fugiat, veritatis odio consequuntur. Adipisci libero assumenda sunt amet ea minima ducimus odio ipsum nulla?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi qui hic nemo enim maiores pariatur vel tempore necessitatibus rem accusantium, voluptatum minus nulla illum nihil eum expedita vitae sapiente. Odit!
+
+        </p>
+    </article>
+    <div class="arrow">+</div>
+    <nav></nav>
+
+    <script>
+        const wrap = document.querySelector('.wrap');
+        const arrow = document.querySelector('.arrow');
+
+        arrow.addEventListener('click', function(){
+            arrow.classList.toggle('rotate');
+            wrap.classList.toggle('up');
+        })
+        wrap.addEventListener('click', function(){
+            
+        })
+    </script>
+ </body>
+ </html>
